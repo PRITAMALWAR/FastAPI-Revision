@@ -12,3 +12,13 @@
 - Lesson 10 Deployment
 - Final Project (any Project With User Authentication API)
 
+
+Most -
+
+- python3 -m venv .venv
+- sudo apt update
+- sudo apt install python3-venv
+- source .venv/bin/activate
+- python -m pip install fastapi uvicorn
+- python -m uvicorn --version
+- python -m uvicorn main:app --reload --port 8001
