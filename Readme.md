@@ -3,7 +3,7 @@
 📁 FastAPI is a modern, high-performance web framework used for building RESTful APIs with Python.
 
 
-📁 FastAPI 
+📁 All Lesson 
  
 - Lesson 1 Hello FastAPI
 - Lesson 2 Path & Query Parameters
