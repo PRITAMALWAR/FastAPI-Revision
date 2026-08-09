@@ -22,3 +22,14 @@ Most -
 - python -m pip install fastapi uvicorn
 - python -m uvicorn --version
 - python -m uvicorn main:app --reload --port 8001
+
+
+- HTTP status
+
+- 200	Success
+- 201	Created
+- 400	Bad Request
+- 401	Unauthorized
+- 403	Forbidden
+- 404	Not Found
+- 500	Server Error
