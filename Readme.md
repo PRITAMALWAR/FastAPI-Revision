@@ -24,7 +24,7 @@ Most -
 - python -m uvicorn main:app --reload --port 8001
 
 
-- HTTP status
+📁 HTTP status
 
 - 200	Success
 - 201	Created
