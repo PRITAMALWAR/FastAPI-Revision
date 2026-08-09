@@ -88,9 +88,9 @@ SQLite Process
         │                   │
         └───────────────────┘
                 ↓
-          GET /profile
+           GET /profile
                 ↓
            JWT required
                 ↓
-          Current user
+           Current user
 
