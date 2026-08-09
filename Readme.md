@@ -69,28 +69,3 @@ SQLite Process
 - python -m uvicorn main:app --reload
 
 
-
-
-                    JWT AUTHENTICATION
-
-                         FastAPI
-                            │
-        ┌───────────────────┼──────────────────┐
-        ↓                   ↓                  ↓
-    REGISTER              LOGIN             USERS
-   POST /register       POST /login       GET /users
-        │                   │                  │
-        ↓                   ↓                  ↓
-   Hash password       Verify password     Get users
-        │                   │                  │
-        ↓                   ↓                  ↓
-      SQLite             JWT Token          Safe data
-        │                   │
-        └───────────────────┘
-                ↓
-           GET /profile
-                ↓
-           JWT required
-                ↓
-           Current user
-
