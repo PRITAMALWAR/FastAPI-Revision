@@ -29,11 +29,9 @@ Most -
 - python -m uvicorn main:app --reload --port 8001
 
 
-<<<<<<< HEAD
+
 📁 HTTP status
-=======
-HTTP status
->>>>>>> 0b610cf (feat: add sqlite database)
+
 
 - 200	Success
 - 201	Created
@@ -42,8 +40,6 @@ HTTP status
 - 403	Forbidden
 - 404	Not Found
 - 500	Server Error
-<<<<<<< HEAD
-=======
 
 
 
@@ -59,4 +55,42 @@ SQLite Process
 - python -c "import sqlite3; print(sqlite3.sqlite_version)"
 
 - python -m uvicorn main:app --reload
+
+
+
+
+
+- JWT 
+
+- python -m pip install fastapi uvicorn sqlalchemy PyJWT "pwdlib[argon2]" python-multipart
+
+- python -c "import fastapi, uvicorn, sqlalchemy, jwt, pwdlib, multipart; print('All Lesson 8 packages OK')"
+
+- python -m uvicorn main:app --reload
+
+
+
+
+                    JWT AUTHENTICATION
+
+                         FastAPI
+                            │
+        ┌───────────────────┼──────────────────┐
+        ↓                   ↓                  ↓
+    REGISTER              LOGIN             USERS
+   POST /register       POST /login       GET /users
+        │                   │                  │
+        ↓                   ↓                  ↓
+   Hash password       Verify password     Get users
+        │                   │                  │
+        ↓                   ↓                  ↓
+      SQLite             JWT Token          Safe data
+        │                   │
+        └───────────────────┘
+                ↓
+          GET /profile
+                ↓
+           JWT required
+                ↓
+          Current user
 
