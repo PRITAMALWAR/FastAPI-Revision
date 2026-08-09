@@ -59,4 +59,4 @@ SQLite Process
 - python -c "import sqlite3; print(sqlite3.sqlite_version)"
 
 - python -m uvicorn main:app --reload
->>>>>>> 0b610cf (feat: add sqlite database)
+
