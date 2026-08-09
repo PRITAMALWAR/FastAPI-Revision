@@ -29,7 +29,11 @@ Most -
 - python -m uvicorn main:app --reload --port 8001
 
 
+<<<<<<< HEAD
 📁 HTTP status
+=======
+HTTP status
+>>>>>>> 0b610cf (feat: add sqlite database)
 
 - 200	Success
 - 201	Created
@@ -38,3 +42,21 @@ Most -
 - 403	Forbidden
 - 404	Not Found
 - 500	Server Error
+<<<<<<< HEAD
+=======
+
+
+
+SQLite Process
+
+- Activate your .venv = Activate your .venv
+- python --version
+
+- Check FastAPI and Uvicorn 
+- python -m pip show fastapi
+
+- Check SQLite
+- python -c "import sqlite3; print(sqlite3.sqlite_version)"
+
+- python -m uvicorn main:app --reload
+>>>>>>> 0b610cf (feat: add sqlite database)
